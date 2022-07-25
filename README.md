@@ -24,6 +24,8 @@ Windows configuration consists in 2 components :
 * hidapitester binary for windows
 
 
+Both files must be put in the same location, whereever you want.
+
 ## Mac
 
 
