@@ -24,6 +24,6 @@ rem Switch MX Anywhere 3 to channel 1
 
 rem Switch MX Keys to channel 1
 .\hidapitester.exe --vidpid %RCVR_VID%:%RCVR_PID% --usage 0x0001 --usagePage 0xFF00 --open --length 7 --send-output 0x10,%KYB_ID%,0x09,0x1e,%KYB_CH%,0x00,0x00
-sleep 2
+timeout /t 2
 rem sending twice since when keyboard is sleeping, might need to wake up
 .\hidapitester.exe --vidpid %RCVR_VID%:%RCVR_PID% --usage 0x0001 --usagePage 0xFF00 --open --length 7 --send-output 0x10,%KYB_ID%,0x09,0x1e,%KYB_CH%,0x00,0x00
